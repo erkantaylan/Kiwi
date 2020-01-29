@@ -1,0 +1,20 @@
+﻿<mah:MetroWindow x:Class="Tyln.PrismMahApps.Demos.Views.ShellWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+                 xmlns:viewModels="clr-namespace:Tyln.PrismMahApps.Demos.ViewModels"
+                 xmlns:mvvm="http://prismlibrary.com/"
+                 mc:Ignorable="d"
+                 d:DataContext="{d:DesignInstance viewModels:ShellWindowViewModel}"
+                 mah:DialogParticipation.Register="{Binding}"
+                 mvvm:ViewModelLocator.AutoWireViewModel="True"
+                 Title="{Binding Path=Title}"
+                 Height="450"
+                 Width="800">
+    <Grid>
+        <Button Content="Click Me"
+                Command="{Binding Path=ShowSimleDialogCommand}"/>
+    </Grid>
+</mah:MetroWindow>
