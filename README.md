@@ -1,2 +1,0 @@
-# Tyln.PrismMahApps
-Tyln.PrismMahApps
