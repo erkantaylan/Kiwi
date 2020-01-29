@@ -3,6 +3,7 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
 # User-specific files
 *.suo
 *.user
@@ -165,17 +166,26 @@ publish/
 # in these scripts will be unencrypted
 PublishScripts/
 
-# NuGet Packages
-*.nupkg
 # The packages folder can be ignored because of Package Restore
 **/packages/*
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
+
+# NuGet Packages
+*.nupkg
+
 # NuGet v3's project.json files produces more ignorable files
 *.nuget.props
 *.nuget.targets
+
+.nuget/CredentialProvider.VSS.exe
+.nuget/CredentialProviderBundle.zip
+.nuget/EULA_Microsoft Visual Studio Team Services Credential Provider.docx
+.nuget/NuGet.exe
+.nuget/ThirdPartyNotices.txt
+
 
 # Microsoft Azure Build Output
 csx/
