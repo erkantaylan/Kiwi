@@ -4,6 +4,9 @@
         <TargetFramework>net48</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Description>Tyln.PrismMahApps</Description>
+        <PackageProjectUrl>https://github.com/erkantaylan/Tyln.PrismMahApps</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/erkantaylan/Tyln.PrismMahApps/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/erkantaylan/Tyln.PrismMahApps</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
