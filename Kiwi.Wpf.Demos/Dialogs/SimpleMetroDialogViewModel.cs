@@ -1,5 +1,4 @@
 ﻿using JetBrains.Annotations;
-using Kiwi.Mvvm;
 using Prism.Commands;
 
 namespace Kiwi.Wpf.Demos.Dialogs

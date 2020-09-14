@@ -3,7 +3,7 @@ using System.Runtime.Serialization;
 using System.Windows;
 using MahApps.Metro.Controls;
 
-namespace Kiwi.Mvvm
+namespace Kiwi.Wpf
 {
     public static class WindowHelper
     {

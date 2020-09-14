@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Kiwi.Core.Filter
+﻿namespace Kiwi.Wpf.Filter
 {
     public static class FilterHelper
     {
@@ -14,7 +10,7 @@ namespace Kiwi.Core.Filter
 
         public static bool Contains(IEnumerable<string> filters, IList<string> items)
         {
-            return filters.Select(f => Contains(f, items)).Any(contains => contains);
+            return filters.Select(f => Contains((string) f, items)).Any(contains => contains);
         }
 
         public static IEnumerable<string> SplitFilter(string filter)

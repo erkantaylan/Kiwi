@@ -1,6 +1,6 @@
 ﻿using MahApps.Metro.Controls.Dialogs;
 
-namespace Kiwi.Mvvm
+namespace Kiwi.Wpf
 {
     public static class MetroDialogSettingsFactory
     {

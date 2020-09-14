@@ -7,7 +7,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using Prism.Mvvm;
 
-namespace Kiwi.Core
+namespace Kiwi.Wpf.Mvvm
 {
     public class ValidatableViewModel : BindableBase, IValidatableViewModel
     {

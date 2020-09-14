@@ -1,8 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls.Primitives;
-using System.Windows.Interactivity;
 
-namespace Kiwi.Core.Filter
+namespace Kiwi.Wpf.Filter
 {
     public class FilterableCollectionBehavior : Behavior<Selector>
     {

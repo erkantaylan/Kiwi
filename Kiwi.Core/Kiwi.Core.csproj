@@ -19,8 +19,4 @@
       <Reference Include="System.ComponentModel.DataAnnotations" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Command" />
-    </ItemGroup>
-
 </Project>

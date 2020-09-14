@@ -1,7 +1,4 @@
-﻿using System;
-using Prism.Mvvm;
-
-namespace Kiwi.Core.Filter
+﻿namespace Kiwi.Wpf.Filter
 {
     public abstract class FilterableViewModelBase : BindableBase, IFilterable
     {
