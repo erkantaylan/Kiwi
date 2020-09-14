@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 
-namespace Kiwi.PrismMahApps
+namespace Kiwi.Mvvm
 {
     public static class DialogExtensions
     {

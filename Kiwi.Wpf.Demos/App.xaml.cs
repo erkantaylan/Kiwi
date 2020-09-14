@@ -1,9 +1,9 @@
 ﻿using System.Windows;
-using Kiwi.PrismMahApps.Demos.Views;
+using Kiwi.Wpf.Demos.Views;
 using MahApps.Metro.Controls.Dialogs;
 using Prism.Ioc;
 
-namespace Kiwi.PrismMahApps.Demos
+namespace Kiwi.Wpf.Demos
 {
     public partial class App
     {

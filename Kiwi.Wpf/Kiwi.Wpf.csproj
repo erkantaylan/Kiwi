@@ -8,6 +8,7 @@
         <PackageLicenseUrl>https://github.com/erkantaylan/Tyln.PrismMahApps/blob/master/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/erkantaylan/Tyln.PrismMahApps</RepositoryUrl>
         <LangVersion>8</LangVersion>
+        <RootNamespace>Kiwi.Mvvm</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

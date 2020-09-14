@@ -1,4 +1,4 @@
-﻿namespace Kiwi.PrismMahApps.Demos.Views
+﻿namespace Kiwi.Wpf.Demos.Views
 {
     public partial class ValidationsView
     {

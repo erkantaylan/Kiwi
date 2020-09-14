@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.PrismMahApps", "Kiwi.PrismMahApps\Kiwi.PrismMahApps.csproj", "{92BC30EF-5F8C-468B-ADBC-ED43354C0758}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.Wpf", "Kiwi.Wpf\Kiwi.Wpf.csproj", "{92BC30EF-5F8C-468B-ADBC-ED43354C0758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.PrismMahApps.Demos", "Kiwi.PrismMahApps.Demos\Kiwi.PrismMahApps.Demos.csproj", "{F5228E11-B82F-4CE4-9788-065AEFD66708}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.Wpf.Demos", "Kiwi.Wpf.Demos\Kiwi.Wpf.Demos.csproj", "{F5228E11-B82F-4CE4-9788-065AEFD66708}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.Core", "Kiwi.Core\Kiwi.Core.csproj", "{93D0463D-14BB-491C-8CE6-389C3351A342}"
 EndProject

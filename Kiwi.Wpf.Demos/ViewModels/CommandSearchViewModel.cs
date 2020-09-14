@@ -2,7 +2,7 @@
 using JetBrains.Annotations;
 using Prism.Mvvm;
 
-namespace Kiwi.PrismMahApps.Demos.ViewModels
+namespace Kiwi.Wpf.Demos.ViewModels
 {
     [UsedImplicitly]
     public class CommandSearchViewModel : BindableBase

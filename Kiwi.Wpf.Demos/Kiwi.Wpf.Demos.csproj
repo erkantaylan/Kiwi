@@ -15,7 +15,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Kiwi.Core\Kiwi.Core.csproj" />
-      <ProjectReference Include="..\Kiwi.PrismMahApps\Kiwi.PrismMahApps.csproj" />
+      <ProjectReference Include="..\Kiwi.Wpf\Kiwi.Wpf.csproj" />
     </ItemGroup>
 
 </Project>

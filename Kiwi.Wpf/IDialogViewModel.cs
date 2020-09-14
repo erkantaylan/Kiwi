@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kiwi.PrismMahApps
+namespace Kiwi.Mvvm
 {
     public interface IDialogViewModel<in TOpen>
     {

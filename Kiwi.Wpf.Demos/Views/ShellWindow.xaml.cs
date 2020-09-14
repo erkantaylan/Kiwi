@@ -1,6 +1,6 @@
 ﻿using Prism.Regions;
 
-namespace Kiwi.PrismMahApps.Demos.Views
+namespace Kiwi.Wpf.Demos.Views
 {
     public partial class ShellWindow
     {

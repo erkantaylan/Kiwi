@@ -2,7 +2,7 @@
 using System.Windows;
 using JetBrains.Annotations;
 
-namespace Kiwi.PrismMahApps.Demos.ViewModels
+namespace Kiwi.Wpf.Demos.ViewModels
 {
     [UsedImplicitly]
     public class ValidationsViewModel : ValidatableViewModel

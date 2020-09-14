@@ -1,4 +1,4 @@
-﻿namespace Kiwi.PrismMahApps.Demos.Dialogs
+﻿namespace Kiwi.Wpf.Demos.Dialogs
 {
     public partial class SimpleMetroDialog
     {

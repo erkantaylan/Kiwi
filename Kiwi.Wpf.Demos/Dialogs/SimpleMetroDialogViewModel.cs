@@ -1,7 +1,8 @@
 ﻿using JetBrains.Annotations;
+using Kiwi.Mvvm;
 using Prism.Commands;
 
-namespace Kiwi.PrismMahApps.Demos.Dialogs
+namespace Kiwi.Wpf.Demos.Dialogs
 {
     [UsedImplicitly]
     public class SimpleMetroDialogViewModel : DialogViewModel<string, string>

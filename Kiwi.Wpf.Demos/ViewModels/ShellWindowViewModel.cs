@@ -1,11 +1,11 @@
 ﻿using System.Windows;
 using DryIoc;
 using JetBrains.Annotations;
-using Kiwi.PrismMahApps.Demos.Dialogs;
+using Kiwi.Wpf.Demos.Dialogs;
 using Prism.Commands;
 using Prism.Mvvm;
 
-namespace Kiwi.PrismMahApps.Demos.ViewModels
+namespace Kiwi.Wpf.Demos.ViewModels
 {
     [UsedImplicitly]
     public class ShellWindowViewModel : BindableBase
