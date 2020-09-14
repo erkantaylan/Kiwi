@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyln.PrismMahApps", "Tyln.PrismMahApps\Tyln.PrismMahApps.csproj", "{92BC30EF-5F8C-468B-ADBC-ED43354C0758}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.PrismMahApps", "Kiwi.PrismMahApps\Kiwi.PrismMahApps.csproj", "{92BC30EF-5F8C-468B-ADBC-ED43354C0758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyln.PrismMahApps.Demos", "Tyln.PrismMahApps.Demos\Tyln.PrismMahApps.Demos.csproj", "{F5228E11-B82F-4CE4-9788-065AEFD66708}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.PrismMahApps.Demos", "Kiwi.PrismMahApps.Demos\Kiwi.PrismMahApps.Demos.csproj", "{F5228E11-B82F-4CE4-9788-065AEFD66708}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyln.Mvvm", "Tyln.Mvvm\Tyln.Mvvm.csproj", "{93D0463D-14BB-491C-8CE6-389C3351A342}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.Core", "Kiwi.Core\Kiwi.Core.csproj", "{93D0463D-14BB-491C-8CE6-389C3351A342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyln.Mvvm.Test", "Tyln.Mvvm.Test\Tyln.Mvvm.Test.csproj", "{1560D376-379A-44CF-89AA-051D0226499B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiwi.Core.Test", "Kiwi.Core.Test\Kiwi.Core.Test.csproj", "{1560D376-379A-44CF-89AA-051D0226499B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
