@@ -34,8 +34,6 @@ namespace Tyln.PrismMahApps.Demos.Dialogs
 
         public override void OnDialogOpened(string parameter)
         {
-            
-            
             MyParameter = $"Incoming parameter is [{parameter}]";
         }
     }

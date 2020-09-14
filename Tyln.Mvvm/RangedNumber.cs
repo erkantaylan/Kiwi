@@ -1,21 +1,22 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Runtime.Serialization;
 using Prism.Mvvm;
 
 namespace Tyln.Mvvm
 {
-    public class RangedNumber : BindableBase
+    public class RangedNumber<T> : BindableBase where T : IComparable
     {
-        private int? maximum;
-        private int? minimum;
-        private int? value;
+        private T maximum;
+        private T minimum;
+        private T value;
 
         public RangedNumber()
         {
             PropertyChanged += OnPropertyChanged;
         }
 
-        public RangedNumber(int? minimum, int? maximum, int? value)
+        public RangedNumber(T minimum, T maximum, T value)
         {
             ValidateRanges(minimum, maximum);
 
@@ -25,39 +26,31 @@ namespace Tyln.Mvvm
             PropertyChanged += OnPropertyChanged;
         }
 
-        public int? Minimum
+        public T Minimum
         {
             get => minimum;
-            set
-            {
-                ValidateRanges(Minimum, Maximum);
-                SetProperty(ref minimum, value);
-            }
+            set => SetProperty(ref minimum, value);
         }
 
-        public int? Maximum
+        public T Maximum
         {
             get => maximum;
-            set
-            {
-                ValidateRanges(Minimum, Maximum);
-                SetProperty(ref maximum, value);
-            }
+            set => SetProperty(ref maximum, value);
         }
 
-        public int? Value
+        public T Value
         {
             get => value;
             set => SetProperty(ref this.value, value);
         }
 
-        private static void ValidateRanges(int? minimum, int? maximum)
+        private static void ValidateRanges(T minimum, T maximum)
         {
             if ((minimum, maximum) != (null, null))
             {
-                if (minimum > maximum)
+                if (minimum.CompareTo(maximum) > 0)
                 {
-                    throw new Exception("Minimum value cannot be bigger than Maximum");
+                    throw new MinimumIsBiggerThanMaximumException($"Minimum value({minimum}) cannot be bigger than Maximum({maximum})");
                 }
             }
         }
@@ -66,14 +59,29 @@ namespace Tyln.Mvvm
         {
             ValidateRanges(Minimum, Maximum);
 
-            if (value < Minimum)
+            if (value.CompareTo(Minimum) < 0)
             {
                 Value = Minimum;
             }
-            else if (value > Maximum)
+            else if (value.CompareTo(Maximum) > 0)
             {
                 Value = Maximum;
             }
+        }
+    }
+
+    [Serializable]
+    public class MinimumIsBiggerThanMaximumException : Exception
+    {
+        public MinimumIsBiggerThanMaximumException() { }
+        public MinimumIsBiggerThanMaximumException(string message) : base(message) { }
+        public MinimumIsBiggerThanMaximumException(string message, Exception inner) : base(message, inner) { }
+
+
+        protected MinimumIsBiggerThanMaximumException(
+            SerializationInfo info,
+            StreamingContext context) : base(info, context)
+        {
         }
     }
 }

@@ -13,6 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Tyln.Mvvm\Tyln.Mvvm.csproj" />
       <ProjectReference Include="..\Tyln.PrismMahApps\Tyln.PrismMahApps.csproj" />
     </ItemGroup>
 

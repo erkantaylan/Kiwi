@@ -8,4 +8,11 @@ namespace Tyln.PrismMahApps
 
         void OnDialogOpened(TOpen parameter);
     }
+    
+    public interface IDialogViewModel
+    {
+        event EventHandler Closed;
+
+        void OnDialogOpened();
+    }
 }

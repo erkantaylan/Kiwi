@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq.Expressions;
 using Prism.Commands;
 
 namespace Tyln.PrismMahApps
 {
-    public class SearchableDelegateCommand : DelegateCommand
+    public class SearchableCommand : DelegateCommand
     {
-        private static ObservableCollection<SearchableDelegateCommand> commands;
+        private static ObservableCollection<SearchableCommand> commands;
 
-        public SearchableDelegateCommand(string name, Action executeMethod) : base(executeMethod)
+        public SearchableCommand(string name, Action executeMethod) : base(executeMethod)
         {
             Name = name;
             Commands.Add(this);
         }
 
-        public SearchableDelegateCommand(string name, Action executeMethod, Func<bool> canExecuteMethod) : base(
+        public SearchableCommand(string name, Action executeMethod, Func<bool> canExecuteMethod) : base(
             executeMethod,
             canExecuteMethod)
         {
@@ -22,8 +23,14 @@ namespace Tyln.PrismMahApps
             Commands.Add(this);
         }
 
-        public static ObservableCollection<SearchableDelegateCommand> Commands => commands ?? (commands = new ObservableCollection<SearchableDelegateCommand>());
+        public static ObservableCollection<SearchableCommand> Commands => commands ?? (commands = new ObservableCollection<SearchableCommand>());
 
         public string Name { get; }
+        
+        public new SearchableCommand ObservesProperty<T>(Expression<Func<T>> propertyExpression)
+        {
+            ObservesPropertyInternal(propertyExpression);
+            return this;
+        }
     }
 }

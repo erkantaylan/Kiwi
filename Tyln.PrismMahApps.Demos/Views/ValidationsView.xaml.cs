@@ -1,8 +1,6 @@
-﻿using System.Windows.Controls;
-
-namespace Tyln.PrismMahApps.Demos.Views
+﻿namespace Tyln.PrismMahApps.Demos.Views
 {
-    public partial class ValidationsView : UserControl
+    public partial class ValidationsView
     {
         public ValidationsView()
         {

@@ -25,7 +25,7 @@ namespace Tyln.PrismMahApps.Demos.ViewModels
             string dialogResult = await dialog.ShowDialogAsync<string, string>("Coolest parameter ever!");
             if (string.IsNullOrWhiteSpace(dialogResult))
             {
-                MessageBox.Show("Sir you canceled the god damn simplest dialog ever dialog!");
+                MessageBox.Show("You have canceled the simplest dialog ever!");
             }
             else
             {

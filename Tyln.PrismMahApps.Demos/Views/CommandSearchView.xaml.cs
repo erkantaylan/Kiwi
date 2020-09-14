@@ -1,10 +1,8 @@
-﻿using System.Windows.Controls;
-
-namespace Tyln.PrismMahApps.Demos.Views
+﻿namespace Tyln.PrismMahApps.Demos.Views
 {
-    public partial class CommandSearchDialog : UserControl
+    public partial class CommandSearchView
     {
-        public CommandSearchDialog()
+        public CommandSearchView()
         {
             InitializeComponent();
         }
