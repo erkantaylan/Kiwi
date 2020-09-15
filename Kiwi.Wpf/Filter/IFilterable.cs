@@ -1,4 +1,6 @@
-﻿namespace Kiwi.Wpf.Filter
+﻿using System;
+
+namespace Kiwi.Wpf.Filter
 {
     public interface IFilterable
     {

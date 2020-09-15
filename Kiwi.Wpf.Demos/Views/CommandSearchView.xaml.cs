@@ -1,6 +1,8 @@
-﻿namespace Kiwi.Wpf.Demos.Views
+﻿using System.Windows.Controls;
+
+namespace Kiwi.Wpf.Demos.Views
 {
-    public partial class CommandSearchView
+    public partial class CommandSearchView : UserControl
     {
         public CommandSearchView()
         {

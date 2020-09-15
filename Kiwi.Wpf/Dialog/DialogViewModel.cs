@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Prism.Mvvm;
 
-namespace Kiwi.Wpf
+namespace Kiwi.Wpf.Dialog
 {
     public abstract class DialogViewModel<TOpen, TClose> : BindableBase, IDialogViewModel<TOpen>
     {

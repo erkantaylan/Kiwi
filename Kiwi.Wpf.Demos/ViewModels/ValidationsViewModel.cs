@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Windows;
 using JetBrains.Annotations;
+using Kiwi.Wpf.Mvvm;
 
 namespace Kiwi.Wpf.Demos.ViewModels
 {
@@ -11,12 +12,9 @@ namespace Kiwi.Wpf.Demos.ViewModels
 
         public ValidationsViewModel()
         {
-            SubmitCommand = new SearchableCommand("Submit Command", OnSubmit, CanSubmit)
-                .ObservesProperty(() => Name);
             Name = "";
         }
 
-        public SearchableCommand SubmitCommand { get; }
 
         [Required(AllowEmptyStrings = false)]
         [StringLength(15, MinimumLength = 1)]

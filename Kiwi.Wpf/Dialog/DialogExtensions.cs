@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
 
-namespace Kiwi.Wpf
+namespace Kiwi.Wpf.Dialog
 {
     public static class DialogExtensions
     {

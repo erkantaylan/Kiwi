@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Kiwi.Wpf
+namespace Kiwi.Wpf.Dialog
 {
     public interface IDialogViewModel<in TOpen>
     {

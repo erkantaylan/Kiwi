@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls.Primitives;
+using Microsoft.Xaml.Behaviors;
 
 namespace Kiwi.Wpf.Filter
 {

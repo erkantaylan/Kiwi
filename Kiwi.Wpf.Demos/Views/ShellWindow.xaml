@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:mvvm="http://prismlibrary.com/"
+    xmlns:viewModels="clr-namespace:Kiwi.Wpf.Demos.ViewModels"
     mc:Ignorable="d"
     d:DataContext="{d:DesignInstance viewModels:ShellWindowViewModel}"
     mah:DialogParticipation.Register="{Binding}"
@@ -21,7 +22,7 @@
             Margin="10"
             Padding="10" />
         <ContentControl
-            mvvm:RegionManager.RegionName="CommandsRegion"
+            mvvm:RegionManager.RegionName="CommandSearchRegion"
             Margin="10"
             Padding="10" />
         <ContentControl

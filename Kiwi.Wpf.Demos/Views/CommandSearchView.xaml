@@ -4,21 +4,41 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:viewModels="clr-namespace:Kiwi.Wpf.Demos.ViewModels"
     xmlns:mvvm="http://prismlibrary.com/"
+    xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:filter="clr-namespace:Kiwi.Wpf.Filter;assembly=Kiwi.Wpf"
     mvvm:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d"
     d:DataContext="{d:DesignInstance viewModels:CommandSearchViewModel}">
-    <Grid>
+    <StackPanel>
+        <TextBox
+            Margin="10"
+            Padding="10"
+            Text="{Binding Path=Search, UpdateSourceTrigger=PropertyChanged}" />
         <ListBox
-            ItemsSource="{x:Static prismMahApps:SearchableCommand.Commands}">
+            ItemsSource="{Binding Path=Commands}">
+            <b:Interaction.Behaviors>
+                <filter:FilterableCollectionBehavior />
+            </b:Interaction.Behaviors>
+            <ListBox.Resources>
+            </ListBox.Resources>
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Button
-                        Margin="1"
-                        Content="{Binding Path=Name}" 
-                        Command="{Binding Path=.}"/>
+                    <DockPanel
+                        Margin="2">
+                        <TextBlock
+                            DockPanel.Dock="Top"
+                            Padding="2"
+                            Text="{Binding Path=Name}" />
+                        <TextBlock
+                            DockPanel.Dock="Top"
+                            Padding="2"
+                            Text="{Binding Path=Description}"
+                            FontSize="8" />
+                    </DockPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-    </Grid>
+    </StackPanel>
 </UserControl>

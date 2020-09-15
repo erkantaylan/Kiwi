@@ -1,4 +1,8 @@
-﻿namespace Kiwi.Wpf.Filter
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Kiwi.Wpf.Filter
 {
     public static class FilterHelper
     {

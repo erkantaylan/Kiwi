@@ -5,6 +5,7 @@
                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                   xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
                   xmlns:mvvm="http://prismlibrary.com/"
+                  xmlns:dialogs="clr-namespace:Kiwi.Wpf.Demos.Dialogs"
                   mc:Ignorable="d"
                   d:DataContext="{d:DesignInstance dialogs:SimpleMetroDialogViewModel}"
                   mvvm:ViewModelLocator.AutoWireViewModel="True">
